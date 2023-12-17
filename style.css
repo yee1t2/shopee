@@ -1,0 +1,254 @@
+body {
+  font-family: oboto, Helvetica, Arial, sans-serif;
+  color: #0d0d0d;
+  background-color: white;
+  margin: auto;
+  padding: auto;
+}
+
+div {
+  display: flex;
+}
+
+header {
+  background-color: #ee4d2d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.headerleft,
+.headeright {
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+}
+
+.headeright div {
+  padding: 5px;
+  margin-right: 6px;
+  font-size: 11px;
+}
+
+.headerleft div {
+  padding: 2px 10px;
+  margin-right: 2px;
+  border-right: 2px solid #a6a6a6;
+}
+
+.searchmiddle {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+.searchmiddle input[type="text"] {
+  width: 45%;
+  padding: 8px;
+}
+
+.searchicon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.searchinput {
+  width: 45%;
+  padding: 8px;
+  padding-right: 36px;
+  box-sizing: border-box;
+}
+
+.headeright {
+  text-align: right;
+  right: 0;
+  top: 0;
+  position: absolute;
+  margin-right: 350px;
+}
+
+.headerleft {
+  left: 0;
+  top: 0;
+  position: absolute;
+  margin-left: 275px;
+}
+
+.headerleft div:nth-child(4) { /* nth-child means that it selects the fourth div under the headerleft class.*/
+  border-right: none;
+}
+
+.headeright div:nth-child(4) {
+  border-right: none;
+}
+
+.borderlogin {
+  border-left: 1px solid #a6a6a6;
+  height: 20%;
+}
+
+.instalign {
+  vertical-align: middle;
+}
+
+.categories {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.slider {
+  width: 100%;
+  background: white;
+}
+
+.sliderbox1 {
+  width: 100%;
+  height: 300px;
+  float: left;
+}
+
+.sliderbox2 {
+  width: 110%;
+  height: 300px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.sliderbox2other {
+  width: 110%;
+  height: 150px;
+}
+
+.directories {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.directories-2 {
+  text-align: left;
+}
+
+.directbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.directbox img {
+  width: 45px;
+  height: auto;
+}
+
+.shoptext {
+  color: #0d0d0d;
+  margin-top: 10px;
+}
+
+.shoptext-2 {
+  color: #0d0d0d;
+}
+
+.categories {
+  text-align: left;
+  margin-left: 380px;
+  margin-top: 10px;
+  align-items: flex-start;
+  color: #bdbdbd;
+}
+
+.directbox-2 {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.5%;
+  border-radius: 1px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.horizontal-list {
+  text-align: right;
+  padding: 0;
+  list-style: none;
+}
+
+.horizontal-list li {
+  display: inline;
+  margin-left: 30px;
+  margin-right: 5px;
+}
+
+.category-image {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.category-image li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+}
+
+.category-image img {
+  display: block;
+  margin-bottom: 5px;
+  width: 70px;
+}
+
+.flash-deals {
+  text-align: right;
+  margin-top: 50px;
+  margin-left: 400px;
+}
+
+.flash-deals img {
+  width: 900px;
+}
+
+.otherbanners {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.othercontainers {
+  display: flex;
+  align-items: center;
+}
+
+.othercontainers img {
+  width: 300px;
+  margin: 0 10px;
+}
+
+/* media query for widescreen (16:9) */
+@media screen and (min-width: 1200px) {
+  .headerleft {
+    margin-left: 20px;
+  }
+
+  .searchmiddle input[type="text"] {
+    width: 70%;
+  }
+
+  .categories {
+    margin-left: 50px;
+  }
+}
